@@ -1,0 +1,150 @@
+
+
+$font-color: rgb(255, 255, 255);
+
+
+
+
+
+.left-bar-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+
+
+}
+
+.left-bar-inside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 80%;
+    
+    
+}
+
+.left-bar-head{
+    
+}
+
+.left-bar-body{
+    margin-top: 5vh;
+    width: 60%;
+    background-color: red;
+
+}
+
+.left-bar-item{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+   
+
+    
+    button{
+
+        margin-bottom: 15px;
+    
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        background-color: black;
+        border: none;
+        color: $font-color;
+        cursor: pointer;
+        border-radius: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        p{
+            margin-left: 10px;
+            font-size: large;
+        }
+        i{
+            font-size: 25px;
+        }
+
+
+    }
+
+    button:hover{
+        background-color: #110;
+        transition: 0.4s;
+    }
+
+    @media (max-width: 1290px){
+
+        align-items: center;
+
+
+        button{
+            padding: 5px;
+            
+            i{
+                font-size: 20px;
+            }
+        }
+        
+    }
+
+
+}
+
+.left-bar-footer{
+    width: 80%;
+    position: absolute;
+    bottom: 1%;
+    margin-left: 20%;
+
+
+    button{
+        background-color: $font-color;
+        color: black;
+        border-radius: 15px;
+        justify-content: center;
+
+        i{
+            display: none;
+        }
+    }
+
+    button:hover{
+        background-color: #ede;
+    }
+
+    @media ( max-width: 1675px){
+        button{
+            i{
+                display: none;
+            }
+        }
+    }
+
+    @media (max-width: 1290px){
+
+        align-items: center;
+
+
+        button{
+            padding: 5px;
+            
+            i{
+                display: block;
+                font-size: 30px;
+            }
+        }
+        
+    }
+}
+
+
+
+@media( max-width: 1290px){
+    .left-bar-container{
+    justify-content: center;
+
+    }    
+}

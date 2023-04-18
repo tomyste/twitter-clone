@@ -1,0 +1,85 @@
+$backgroundColor: rgb(0, 0, 0) ;
+$font-color: rgb(179, 159, 159);
+$border-color: rgb(17,34,51);
+
+
+
+
+/* Maquetacion de la web, responsive para desktop*/
+
+body{
+    background-color: $backgroundColor;
+    color: $font-color;
+    font-family: 'Chivo Mono', monospace;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    height: 95vh;
+    justify-content: center;
+    margin-top: 10px;
+    position: fixed;
+
+
+}
+
+.left-column, .right-column{
+    width: 14%;
+}
+
+
+.left-bar, .rigth-bar{
+    width: 18%;
+    flex-shrink: 0;
+}
+
+.left-bar{
+    
+}
+
+.feed-center{
+    width: 600px;
+    flex-shrink: 0;
+    overflow-y: auto;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+
+@media (max-width: 1290px){
+    
+    .left-bar{
+        width: 10%;
+    }
+    .rigth-bar{
+        width: 25%;
+        flex-shrink: 1;
+    }
+}
+
+@media (max-width: 950px){
+    .container{
+        justify-content: flex-start;
+    }
+   
+}
+
+@media (max-width: 890px){
+    .feed-center{
+        flex-shrink: 1;
+    }
+    .left-bar{
+        width: 92px;
+        flex-shrink: 0;
+    }
+}
+    
+//TODO: Aca podriamos ver la forma de adaptar todo cuando el heigth es 415 o menos
+
+// @media (max-height: 415px){}
+
