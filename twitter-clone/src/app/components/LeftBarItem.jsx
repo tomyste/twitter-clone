@@ -6,10 +6,6 @@ export const LeftBarItem = ({ iconName, actionName}) => {
 
    const {width} = useScreenSize(); 
 
-
-
-
-
   return (
     <>
         <div className='left-bar-item'>

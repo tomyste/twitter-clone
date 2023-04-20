@@ -1,5 +1,5 @@
 $backgroundColor: rgb(0, 0, 0) ;
-$font-color: rgb(179, 159, 159);
+$font-color: rgb(255,255,255);
 $border-color: rgb(17,34,51);
 
 
@@ -35,13 +35,24 @@ body{
 }
 
 .left-bar{
-    
+    border-color: $border-color;
+    overflow-y: auto;
+
+    ::-webkit-scrollbar{
+        display: none;
+    }
 }
+
+
 
 .feed-center{
     width: 600px;
     flex-shrink: 0;
     overflow-y: auto;
+    border-right: solid 0.3px;
+    border-left: solid 0.3px;
+    border-color: $border-color;
+
 }
 
 ::-webkit-scrollbar{

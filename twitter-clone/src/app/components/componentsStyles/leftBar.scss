@@ -12,6 +12,8 @@ $font-color: rgb(255, 255, 255);
     display: flex;
     justify-content: flex-end;
     color: white;
+    position: relative;
+    
 
 
 }
@@ -24,23 +26,29 @@ $font-color: rgb(255, 255, 255);
     width: 80%;
     
     
+    
 }
 
 .left-bar-head{
+    margin-top: -20px;
     
 }
 
 .left-bar-body{
     margin-top: 5vh;
     width: 60%;
-    background-color: red;
-
+    overflow-y: auto;
+    background-color: blue;
+    
+   
 }
 
 .left-bar-item{
     display: flex;
     flex-direction: column;
     width: 60%;
+
+    
    
 
     
@@ -95,15 +103,16 @@ $font-color: rgb(255, 255, 255);
 
 .left-bar-footer{
     width: 80%;
-    position: absolute;
     bottom: 1%;
     margin-left: 20%;
-
-
+    position: absolute;
+    background-color: black;
+    
     button{
         background-color: $font-color;
         color: black;
         border-radius: 15px;
+        padding: 2px;
         justify-content: center;
 
         i{
@@ -130,7 +139,7 @@ $font-color: rgb(255, 255, 255);
 
         button{
             padding: 5px;
-            
+        
             i{
                 display: block;
                 font-size: 30px;
@@ -138,6 +147,12 @@ $font-color: rgb(255, 255, 255);
         }
         
     }
+    @media (max-height: 380px){
+    
+        position: relative;
+    
+}
+    
 }
 
 
@@ -148,3 +163,4 @@ $font-color: rgb(255, 255, 255);
 
     }    
 }
+

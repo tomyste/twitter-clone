@@ -7,10 +7,7 @@ $border-color: rgb(17,34,51);
 .post-container{
     display: flex;
     justify-content: center;
-    border-left: solid 0.3px;
-    border-right: solid 0.3px;
-
-    border-color: $border-color;
+    
 }
 
 
@@ -51,14 +48,13 @@ $border-color: rgb(17,34,51);
     justify-content: space-between;
     padding: 0 10px ;
 
-    button{
+    button:hover{
         background-color: black;
-        border: none;
-        cursor: pointer;
-
     }
 
     .icon-post{
         color: white;
+        font-size: 15px;
+        
     }
 }

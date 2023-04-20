@@ -12,7 +12,7 @@ export const LeftBar = () => {
       <div className='left-bar-container'>
         <div className='left-bar-inside'>
           <div className='left-bar-head'>
-            <h2> tomy</h2>
+            <h2> LOGO </h2>
           </div>
           <div className='left-bar-body'></div>
             <LeftBarItem iconName={"bi bi-house"} actionName={"Home"}></LeftBarItem>

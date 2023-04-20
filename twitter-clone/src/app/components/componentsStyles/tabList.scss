@@ -1,0 +1,56 @@
+$backgroundColor: rgb(0, 0, 0) ;
+$font-color: rgb(255,255,255);
+$border-color: rgb(17,34,51);
+
+
+
+.tab-container{
+    margin-top: 10px;
+    
+}
+
+.tab-inside{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    border-bottom: 1px solid $border-color;
+    width: 100%;
+  
+
+    .tab {
+        color: #777;
+        padding: 0 20px;
+        width: 100%;
+  
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 15px;
+    
+        &:hover {
+          background-color: #111;
+        }
+    
+        &__label {
+          position: relative;
+          width: 100%;
+          padding: 20px 7px;
+    
+          &.active {
+            color: white;
+            border-bottom: solid 0.4px;
+    
+            &::after {
+              content: '';
+              height: 3px;
+              width: 100%;
+              background-color: var(--theme-color);
+              border-radius: 40px;
+              position: absolute;
+              bottom: 0;
+              left: 0;
+            }
+          }
+        }
+    }
+}
