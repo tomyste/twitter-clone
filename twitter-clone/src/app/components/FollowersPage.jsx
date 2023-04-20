@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import { TabList } from './TabList';
 import './componentsStyles/followersPage.scss'
 import { ProfileTop } from './ProfileTop';
+import { UserItem } from './UserItem';
+
 
 const tabs = [
     {   
@@ -18,14 +20,26 @@ const tabs = [
 
 export const FollowersPage = () => {
 
+    
+
   return (
         <>
             <ProfileTop></ProfileTop>
+            <TabList tabs={tabs}></TabList>
             <div className='followers-container'>
-                <div className='followers-inside'>
-                    <TabList tabs={tabs}></TabList>
-                </div>
+                <UserItem></UserItem>
+                <UserItem></UserItem>
+                <UserItem></UserItem>
+                <UserItem></UserItem>
+                <UserItem></UserItem>
+                <UserItem></UserItem>
+                <UserItem></UserItem>
+                <UserItem></UserItem>
+                <UserItem></UserItem>
+
+
             </div>
+
         </>
     )
 }

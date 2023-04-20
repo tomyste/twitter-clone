@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react' 
 import { PostBox } from '../components/PostBox'
 import { FollowersPage, Profile } from '../components'
 
@@ -12,6 +12,7 @@ export const FeedCenter = () => {
         <FollowersPage></FollowersPage>
 
 
+        {/* <PostBox></PostBox>
         <PostBox></PostBox>
         <PostBox></PostBox>
         <PostBox></PostBox>
@@ -19,8 +20,7 @@ export const FeedCenter = () => {
         <PostBox></PostBox>
         <PostBox></PostBox>
         <PostBox></PostBox>
-        <PostBox></PostBox>
-        <PostBox></PostBox> 
+        <PostBox></PostBox>  */}
 
 
       </div>

@@ -4,7 +4,7 @@ $border-color: rgb(17,34,51);
 
 button{
     border: none;
-    background-color: black;
+    background-color: $backgroundColor;
     color: $font-color;
     border-radius: 15px;
     padding: 8px 10px;
@@ -18,8 +18,7 @@ button:hover{
 }
 
 .profile-container{
-    width: 100%;
-    
+    width: 100%;    
 }
 
 .profile-inside{
@@ -179,5 +178,6 @@ button:hover{
       
         }
     }
+   
 
 }

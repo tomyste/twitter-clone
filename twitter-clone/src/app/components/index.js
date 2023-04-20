@@ -4,7 +4,9 @@ export * from './LeftBarItem';
 export * from './PostBox';
 export * from './Profile';
 export * from './TabList';
-export * from './FollowersPage'
-export * from './ProfileTop'
+export * from './FollowersPage';
+export * from './ProfileTop';
+export * from './UserItem'
+
 
 
