@@ -46,10 +46,7 @@ $font-color: rgb(255, 255, 255);
 .left-bar-item{
     display: flex;
     flex-direction: column;
-    width: 60%;
-
-    
-   
+    width: 70%;
 
     
     button{
@@ -66,15 +63,14 @@ $font-color: rgb(255, 255, 255);
         border-radius: 15px;
         padding-left: 15px;
         padding-right: 15px;
-
+        font-size: large;
         p{
             margin-left: 10px;
-            font-size: large;
         }
-        i{
-            font-size: 25px;
+        
+        @media ( max-width: 1366px){
+            font-size: medium;
         }
-
 
     }
 
@@ -131,6 +127,7 @@ $font-color: rgb(255, 255, 255);
             }
         }
     }
+
 
     @media (max-width: 1290px){
 
