@@ -1,9 +1,6 @@
 
 .followers-container{
     width: 95%;
-    margin-top: 40px;
-    margin-left: 15px;
-    width: 580px;
 
     
 }
@@ -11,11 +8,32 @@
 
 
 .followers-inside{
+    margin-top: 40px;
+    margin-left: 15px;
+
+    position: fixed;
+    width: 580px;
+
+
+
 
     .tab-inside{
         grid-template-columns: 1fr 1fr;
+        width: 98%;
+
+    }
 
 
+    @media (max-width: 703px) {
+        width: 82%;
+        margin-left: 15px;
+
+
+        .tab-inside{
+            width: 90%;
+
+        }
+        
     }
 
     

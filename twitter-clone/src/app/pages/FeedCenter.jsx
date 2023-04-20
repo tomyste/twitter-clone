@@ -12,7 +12,6 @@ export const FeedCenter = () => {
         <FollowersPage></FollowersPage>
 
 
-        {/* <PostBox></PostBox>
         <PostBox></PostBox>
         <PostBox></PostBox>
         <PostBox></PostBox>
@@ -20,7 +19,8 @@ export const FeedCenter = () => {
         <PostBox></PostBox>
         <PostBox></PostBox>
         <PostBox></PostBox>
-        <PostBox></PostBox>  */}
+        <PostBox></PostBox>
+        <PostBox></PostBox> 
 
 
       </div>
